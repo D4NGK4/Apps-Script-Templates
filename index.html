@@ -12,7 +12,7 @@
 
     <body>
         <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+        <nav class="navbar sticky-top navbar-expand-lg bg-light navbar-light py-3 fixed-top">
             <div class="container">
                 <a href="#" class="navbar-brand">Email Reminder</a>
 
@@ -34,9 +34,27 @@
             </div>
         </nav>
         <!-- Pa Chuy Chuy -->
-        <div>
+        <section class="bg-light text-dark p-4 p-lg-4 text-start">
+            <div class="container">
+                <h1 class="display-1" style="font-size: 90px; text-wrap: nowrap;">@ Pa Chuy Chuy</h1>
+            </div>
+        </section>
+        <!-- Form -->
 
-        </div>
+        <section class="bg-light p-5 ">
+            <div class="container d-flex flex-column justify-content-start">
+
+                <input placeholder="Email" type="email"
+                    style="border-top:none; border-left:none; border-right:none; border: buttom 2px solid black; outline:none; width:70%; padding: 5px; background-color: transparent">
+                <input placeholder="Subject" type="text"
+                    style="border-top:none; border-left:none; border-right:none; border: buttom 2px solid black; outline:none; width:70%; padding: 5px; background-color: transparent; margin-top:40px">
+
+                <textarea autofocus rows="10" wrap="soft" placeholder="Message" name="" id=""
+                    style="margin-top: 60px; width:100%; padding:5px; border-radius: 8px;"></textarea>
+
+            </div>
+        </section>
+
 
 
 
