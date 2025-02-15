@@ -60,10 +60,25 @@
                 <p style="padding: 2px; margin-top: 20px">Set Time</p>
                 <input type="time" id="appt" name="appt" style="padding: 5px; width: 20%;;">
 
-                <button class="btn btn-dark text-light" style="width: 200px; height: 40px; margin-top: 20px; align-self: end">Submit</button>
+                <button class="btn btn-dark text-light"
+                    style="width: 200px; height: 40px; margin-top: 20px; align-self: end" data-bs-toggle="modal"
+                    data-bs-target="#submitModal">Submit</button>
 
         </section>
 
+        <!-- Modal -->
+
+        <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-success" id="exampleModalLabel">Email Scheduled!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 
 
 
