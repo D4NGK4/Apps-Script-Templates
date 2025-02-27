@@ -20,6 +20,18 @@
             rel="stylesheet">
         <!-- Fonts end -->
 
+        <!-- Bootstrap Tables -->
+        <style>
+            .select,
+            #locale {
+                width: 100%;
+            }
+
+            .like {
+                margin-right: 10px;
+            }
+        </style>
+
 
 
     </head>
@@ -59,10 +71,9 @@
                 <table id="table" data-toolbar="#toolbar" data-search="true" data-show-refresh="true"
                     data-show-toggle="true" data-show-fullscreen="true" data-show-columns="true"
                     data-show-columns-toggle-all="true" data-detail-view="true" data-show-export="true"
-                    data-click-to-select="true" data-minimum-count-columns="5"
-                    data-show-pagination-switch="true" data-pagination="true" data-id-field="id"
-                    data-page-list="[10, 25, 50, 100, all]" data-show-footer="true" data-side-pagination="server"
-                    data-url="Email_Reminder_Mock_Data.json"
+                    data-click-to-select="true" data-minimum-count-columns="5" data-show-pagination-switch="true"
+                    data-pagination="true" data-id-field="id" data-page-list="[10, 25, 50, 100, all]"
+                    data-show-footer="false" data-side-pagination="server" data-url="Email_Reminder_Mock_Data.json"
                     data-response-handler="responseHandler">
 
                     <thead>
@@ -188,29 +199,29 @@
                                 footerFormatter: totalTextFormatter
                             },
                             {
-                                title: 'Item Detail',
+                                title: ' ',
                                 colspan: 3,
                                 align: 'center'
                             }
                         ],
                         [
                             {
-                                field: 'name',
-                                title: 'Item Name',
+                                field: 'email',
+                                title: 'Email',
                                 sortable: true,
                                 footerFormatter: totalNameFormatter,
                                 align: 'center'
                             },
                             {
-                                field: 'price',
-                                title: 'Item Price',
+                                field: 'subject',
+                                title: 'Subject',
                                 sortable: true,
                                 align: 'center',
                                 footerFormatter: totalPriceFormatter
                             },
                             {
-                                field: 'operate',
-                                title: 'Item Operate',
+                                field: 'message',
+                                title: 'Message',
                                 align: 'center',
                                 clickToSelect: false,
                                 events: window.operateEvents,
